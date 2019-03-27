@@ -250,6 +250,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2399918007868879883, guid: 28efb55397d00c2479627de86abee36b,
         type: 3}
+      propertyPath: RFIDTag.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2399918007868879883, guid: 28efb55397d00c2479627de86abee36b,
+        type: 3}
       propertyPath: RFIDtag
       value: 8940 0000 1111 0003 0001
       objectReference: {fileID: 0}
@@ -258,6 +263,11 @@ PrefabInstance:
       propertyPath: gameParameter
       value: 
       objectReference: {fileID: 1507631709}
+    - target: {fileID: 2399918007868879883, guid: 28efb55397d00c2479627de86abee36b,
+        type: 3}
+      propertyPath: RFIDTag.Array.data[0]
+      value: 8940 0000 1111 0003 0001
+      objectReference: {fileID: 0}
     - target: {fileID: 2399918007868879884, guid: 28efb55397d00c2479627de86abee36b,
         type: 3}
       propertyPath: m_audioClip
@@ -334,6 +344,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2399918007868879883, guid: 28efb55397d00c2479627de86abee36b,
         type: 3}
+      propertyPath: RFIDTag.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2399918007868879883, guid: 28efb55397d00c2479627de86abee36b,
+        type: 3}
       propertyPath: RFIDtag
       value: 8940 0000 1111 0002 0001
       objectReference: {fileID: 0}
@@ -342,6 +357,11 @@ PrefabInstance:
       propertyPath: gameParameter
       value: 
       objectReference: {fileID: 1507631709}
+    - target: {fileID: 2399918007868879883, guid: 28efb55397d00c2479627de86abee36b,
+        type: 3}
+      propertyPath: RFIDTag.Array.data[0]
+      value: 8940 0000 1111 0002 0001
+      objectReference: {fileID: 0}
     - target: {fileID: 2399918007868879884, guid: 28efb55397d00c2479627de86abee36b,
         type: 3}
       propertyPath: m_audioClip
@@ -500,6 +520,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2399918007868879883, guid: 28efb55397d00c2479627de86abee36b,
         type: 3}
+      propertyPath: RFIDTag.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2399918007868879883, guid: 28efb55397d00c2479627de86abee36b,
+        type: 3}
       propertyPath: RFIDtag
       value: 8940 0000 1111 0006 0001
       objectReference: {fileID: 0}
@@ -508,6 +533,11 @@ PrefabInstance:
       propertyPath: gameParameter
       value: 
       objectReference: {fileID: 1507631709}
+    - target: {fileID: 2399918007868879883, guid: 28efb55397d00c2479627de86abee36b,
+        type: 3}
+      propertyPath: RFIDTag.Array.data[0]
+      value: 8940 0000 1111 0006 0001
+      objectReference: {fileID: 0}
     - target: {fileID: 2399918007868879884, guid: 28efb55397d00c2479627de86abee36b,
         type: 3}
       propertyPath: m_audioClip
@@ -686,6 +716,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2399918007868879883, guid: 28efb55397d00c2479627de86abee36b,
         type: 3}
+      propertyPath: RFIDTag.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2399918007868879883, guid: 28efb55397d00c2479627de86abee36b,
+        type: 3}
       propertyPath: RFIDtag
       value: 8940 0000 1111 0005 0001
       objectReference: {fileID: 0}
@@ -694,6 +729,11 @@ PrefabInstance:
       propertyPath: gameParameter
       value: 
       objectReference: {fileID: 1507631709}
+    - target: {fileID: 2399918007868879883, guid: 28efb55397d00c2479627de86abee36b,
+        type: 3}
+      propertyPath: RFIDTag.Array.data[0]
+      value: 8940 0000 1111 0005 0001
+      objectReference: {fileID: 0}
     - target: {fileID: 2399918007868879884, guid: 28efb55397d00c2479627de86abee36b,
         type: 3}
       propertyPath: m_audioClip
@@ -770,6 +810,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2399918007868879883, guid: 28efb55397d00c2479627de86abee36b,
         type: 3}
+      propertyPath: RFIDTag.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2399918007868879883, guid: 28efb55397d00c2479627de86abee36b,
+        type: 3}
       propertyPath: RFIDtag
       value: 8940 0000 1111 0001 0001
       objectReference: {fileID: 0}
@@ -778,6 +823,11 @@ PrefabInstance:
       propertyPath: gameParameter
       value: 
       objectReference: {fileID: 1507631709}
+    - target: {fileID: 2399918007868879883, guid: 28efb55397d00c2479627de86abee36b,
+        type: 3}
+      propertyPath: RFIDTag.Array.data[0]
+      value: 8940 0000 1111 0001 0001
+      objectReference: {fileID: 0}
     - target: {fileID: 2399918007868879884, guid: 28efb55397d00c2479627de86abee36b,
         type: 3}
       propertyPath: m_audioClip
@@ -854,6 +904,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2399918007868879883, guid: 28efb55397d00c2479627de86abee36b,
         type: 3}
+      propertyPath: RFIDTag.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2399918007868879883, guid: 28efb55397d00c2479627de86abee36b,
+        type: 3}
       propertyPath: RFIDtag
       value: 8940 0000 1111 0004 0001
       objectReference: {fileID: 0}
@@ -862,6 +917,11 @@ PrefabInstance:
       propertyPath: gameParameter
       value: 
       objectReference: {fileID: 1507631709}
+    - target: {fileID: 2399918007868879883, guid: 28efb55397d00c2479627de86abee36b,
+        type: 3}
+      propertyPath: RFIDTag.Array.data[0]
+      value: 8940 0000 1111 0004 0001
+      objectReference: {fileID: 0}
     - target: {fileID: 2399918007868879884, guid: 28efb55397d00c2479627de86abee36b,
         type: 3}
       propertyPath: m_audioClip
@@ -938,12 +998,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2399918007868879883, guid: 28efb55397d00c2479627de86abee36b,
         type: 3}
+      propertyPath: RFIDTag.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2399918007868879883, guid: 28efb55397d00c2479627de86abee36b,
+        type: 3}
       propertyPath: gameParameter
       value: 
       objectReference: {fileID: 1507631709}
     - target: {fileID: 2399918007868879883, guid: 28efb55397d00c2479627de86abee36b,
         type: 3}
       propertyPath: RFIDtag
+      value: 8940 0000 1111 0000 0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2399918007868879883, guid: 28efb55397d00c2479627de86abee36b,
+        type: 3}
+      propertyPath: RFIDTag.Array.data[0]
       value: 8940 0000 1111 0000 0001
       objectReference: {fileID: 0}
     - target: {fileID: 2399918007868879884, guid: 28efb55397d00c2479627de86abee36b,

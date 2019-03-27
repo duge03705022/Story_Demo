@@ -5,12 +5,15 @@ using UnityEngine;
 public class Character : MonoBehaviour
 {
     public GameParameter gameParameter;
-    public string RFIDtag;
+    public string[] RFIDTag;
 
     // Start is called before the first frame update
     void Start()
     {
-        gameParameter.characterDic.Add(RFIDtag, gameObject);
+        for (int i = 0; i < RFIDTag.Length; i++)
+        {
+            gameParameter.characterDic.Add(RFIDTag[i], gameObject);
+        }
     }
 
     // Update is called once per frame

@@ -121,10 +121,6 @@ public class RFIBManager : MonoBehaviour
             ChangeTestTag("8940 0000 1111 0005 0001");
         if (Input.GetKeyUp("6"))
             ChangeTestTag("8940 0000 1111 0006 0001");
-        if (Input.GetKeyUp("7"))
-            ChangeTestTag("8940 0000 1111 0007 0001");
-        if (Input.GetKeyUp("8"))
-            ChangeTestTag("8940 0000 1111 0008 0001");
 
         #region Information
         if (Input.GetKeyUp(";"))
