@@ -7,10 +7,17 @@ public class SoundController : MonoBehaviour
     public RFIBManager rFIBManager; 
     public GameParameter gameParameter;
 
+    public Dictionary<string, bool> playDic;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        playDic = new Dictionary<string, bool>();
+
+        foreach (var dic in gameParameter.characterDic)
+        {
+            playDic.Add(dic.Key, false);
+        }
     }
 
     // Update is called once per frame
@@ -24,9 +31,10 @@ public class SoundController : MonoBehaviour
     {
         foreach (var dic in gameParameter.characterDic)
         {
-            if (rFIBManager.tagSensing[dic.Key])
+            if (rFIBManager.tagSensing[dic.Key] && !playDic[dic.Key])
             {
                 dic.Value.GetComponent<AudioSource>().Play();
+                playDic[dic.Key] = true;
             }
         }
     }

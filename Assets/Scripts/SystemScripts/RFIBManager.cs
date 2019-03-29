@@ -13,12 +13,13 @@ public class RFIBManager : MonoBehaviour
     public GameParameter gameParameter;
 
     public Dictionary<string, bool> tagSensing;
+    public Dictionary<string, int> tagMissTime;
 
     #region RFIB parameter
-    readonly short[] EnableAntenna = {1, 2, 3, 4};       // reader port
-    readonly string ReaderIP = "192.168.1.96";           // 到時再說
-    readonly double ReaderPower = 32, Sensitive = -70;   // 功率, 敏感度
-    readonly bool Flag_ToConnectTheReade = false;        // false就不會連reader
+    readonly short[] EnableAntenna = { 1 };       // reader port
+    readonly string ReaderIP = "192.168.1.94";           // 到時再說
+    readonly double ReaderPower = 30, Sensitive = -70;   // 功率, 敏感度
+    readonly bool Flag_ToConnectTheReade = true;        // false就不會連reader
 
     readonly bool showSysMesg = true;
     readonly bool showReceiveTag = true;
@@ -57,10 +58,12 @@ public class RFIBManager : MonoBehaviour
         #endregion
 
         tagSensing = new Dictionary<string, bool>();
+        tagMissTime = new Dictionary<string, int>();
 
         foreach (var dic in gameParameter.characterDic)
         {
             tagSensing.Add(dic.Key, false);
+            tagMissTime.Add(dic.Key, 0);
         }
     }
 
@@ -68,6 +71,7 @@ public class RFIBManager : MonoBehaviour
     void Update()
     {
         RFIB.statesUpdate();
+        CountTagTime();
         SenseID();
         KeyPressed();
     }
@@ -90,15 +94,27 @@ public class RFIBManager : MonoBehaviour
         }
     }
 
-    public void SenseID()
+    public void CountTagTime()
     {
         foreach (var dic in gameParameter.characterDic)
         {
             if (RFIB.IfContainTag(dic.Key))
             {
                 tagSensing[dic.Key] = true;
+                tagMissTime[dic.Key] = 0;
             }
             else
+            {
+                tagMissTime[dic.Key] += 1;
+            }
+        }
+    }
+
+    public void SenseID()
+    {
+        foreach (var dic in gameParameter.characterDic)
+        {
+            if (tagMissTime[dic.Key] > 10)
             {
                 tagSensing[dic.Key] = false;
             }
@@ -108,9 +124,9 @@ public class RFIBManager : MonoBehaviour
     public void KeyPressed()
     {
         if (Input.GetKeyUp("0"))
-            ChangeTestTag("8940 0000 1111 0000 0001");
+            ChangeTestTag("8940 0000 3333 0004 0012");
         if (Input.GetKeyUp("1"))
-            ChangeTestTag("8940 0000 1111 0001 0001");
+            ChangeTestTag("8940 0000 3333 0005 0012");
         if (Input.GetKeyUp("2"))
             ChangeTestTag("8940 0000 1111 0002 0001");
         if (Input.GetKeyUp("3"))
